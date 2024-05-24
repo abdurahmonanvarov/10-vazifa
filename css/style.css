@@ -478,10 +478,6 @@ img {
   text-decoration: none;
   color: #13AB4E;
 }
-.main .continer__main .hero__img img {
-  width: 551px;
-  height: 579px;
-}
 
 @media screen and (max-width: 1200px) {
   .continer {
@@ -506,37 +502,20 @@ img {
   .continer {
     max-width: 720px;
   }
-  .main {
-    padding-bottom: 24px;
-    padding-top: 24px;
-    background-color: rgba(19, 171, 78, 0.05);
-  }
-  .main .continer__main {
+  .continer__main {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  .main .continer__main .info__main h1 {
-    font-size: 30px;
-    line-height: 40px;
+  .continer__main .info__main {
+    text-align: center;
+    order: 1;
   }
-  .main .continer__main .info__main p {
-    font-size: 15px;
-    line-height: 26px;
+  .continer__main .info__main .calls__button {
+    display: flex;
+    justify-content: center;
   }
-  .main .continer__main .hero__img img {
-    width: 500px;
-    height: 526px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .continer {
-    max-width: 540px;
-  }
-}
-@media screen and (max-width: 540px) {
-  .continer {
-    max-width: 300px;
+  .continer__main .hero__image {
+    order: 2;
   }
 }
 * {
@@ -582,6 +561,23 @@ body {
   background-color: #0d622d;
 }
 
+.companis__logos {
+  margin-bottom: 50px;
+}
+
+.continerlogos h4 {
+  text-align: center;
+  font-size: 16px;
+  color: #0D7D38;
+  margin-bottom: 32px;
+}
+.continerlogos .wrapper__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
 @media screen and (max-width: 1200px) {
   .continer {
     max-width: 960px;
@@ -590,6 +586,10 @@ body {
 @media screen and (max-width: 992px) {
   .continer {
     max-width: 720px;
+  }
+  .continerlogos .wrapper__logo {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 768px) {
