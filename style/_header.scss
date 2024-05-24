@@ -1,0 +1,175 @@
+.header {
+    background-color: rgba(19, 171, 78, 0.05);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    box-shadow: 0px 0px 0px #DEDEDE;
+
+    .continer__header {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo__header {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+
+            a img {
+                width: 148px;
+                height: 40px;
+            }
+        }
+    }
+
+    .logo__header {
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                color: #333333;
+                text-decoration: none;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #13AB4E;
+                }
+            }
+        }
+    }
+
+    .continer__header {
+        .sign__header {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .sign {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                a {
+                    text-decoration: none;
+                    color: #333333;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: #13AB4E;
+                    }
+                }
+            }
+
+            button {
+                @extend %buttontemple;
+            }
+        }
+    }
+
+}
+img{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .continer {
+        max-width: 720px;
+    }
+
+    .header {
+        font-size: 9px;
+    }
+    .header{
+        .logo__header {
+            nav ul {
+                gap: 30px;
+            }
+        }
+    
+    }
+    .header{
+        .continer__header {
+            .logo__header {
+                gap: 36px;
+    
+                a img {
+                    width: 130px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .continer {
+        max-width: 540px;
+    }
+
+    .continer__header {
+        .logo__header {
+
+            .header__nav {
+                display: none;
+            }
+        }
+
+    }
+   .header__nav{
+    position: relative;
+    background-color: #13AB4E;
+   
+    ul{
+        
+        position: absolute;
+        flex-direction: column;
+       
+        width: 100%;
+       
+        li{
+           a{
+            font-size: 12px;
+            
+           }
+        }
+    }
+   }
+
+    .header {
+        .continer__header {
+            .sign__header {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+        label .imageburg {
+            display: block;
+        }
+    }
+
+    .header {
+        .continer__header {
+            .call {
+                display: block;
+            }
+        }
+    }
+
+    #chek:checked~.header__nav {
+        display: block;
+        
+    }
+
+}

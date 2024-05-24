@@ -1,0 +1,140 @@
+.main{
+    padding-bottom: 24px;
+    padding-top: 24px;
+    background-color: rgba(19, 171, 78, 0.05);
+    .continer__main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .info__main{
+            h1{
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 72px;
+                margin-bottom: 16px;
+                span{
+                    color: #13AB4E;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: #333333;
+                line-height: 36px;
+                margin-bottom: 32px;
+            }
+            .calls__button{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                button{
+                    @extend %buttontemple;
+                }
+                .phone{
+                  display: flex;
+                  align-items: center;
+                  gap: 6px;
+                  a{
+                    text-decoration: none;
+                    color: #13AB4E;
+                  }
+                }
+            }
+        }
+        .hero__img{
+            img{
+                width: 551px;
+                height: 579px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .continer {
+        max-width: 960px;
+    }
+    .main{
+        padding-bottom: 24px;
+        padding-top: 24px;
+        background-color: rgba(19, 171, 78, 0.05);
+        .continer__main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .info__main{
+                h1{
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .continer {
+        max-width: 720px;
+    }
+
+    .main{
+        padding-bottom: 24px;
+        padding-top: 24px;
+        background-color: rgba(19, 171, 78, 0.05);
+        .continer__main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .info__main{
+                h1{
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+            .calls__button{
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                button{
+                    @extend %buttontemple;
+                }
+                .phone{
+                    flex-direction: column;
+                  gap: 6px;
+                  a{
+                    text-decoration: none;
+                    color: #13AB4E;
+                  }
+                }
+            }
+            .hero__img{
+                img{
+                    width: 343px;
+                    height: 360px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .continer {
+        max-width: 540px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .continer {
+        max-width: 300px;
+
+    }
+
+}
