@@ -578,6 +578,10 @@ body {
   gap: 60px;
 }
 
+.main {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1200px) {
   .continer {
     max-width: 960px;
@@ -590,6 +594,7 @@ body {
   .continerlogos .wrapper__logo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
